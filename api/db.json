@@ -69,22 +69,6 @@
       "country": "Morocco",
       "address": "atlas marina beach, agadir",
       "date": "Dec 1, 2016, 9:21:21 PM"
-    },
-    {
-      "agent": "088",
-      "country": "Ur",
-      "address": "erfer",
-      "date": "Apr 30, 2019, 9:45:00 AM",
-      "createdAt": 1558854966637,
-      "id": 11
-    },
-    {
-      "agent": "dfdf",
-      "country": "sdfs",
-      "address": "sdsd",
-      "date": "Apr 30, 2019, 12:00:00 AM",
-      "createdAt": 1558855177078,
-      "id": 12
     }
   ],
   "archives": [
