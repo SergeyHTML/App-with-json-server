@@ -7,7 +7,7 @@ export function loadMissions() {
             type: LOAD_MISSION + START,
         });
 
-        fetch(`http://localhost:3000/agents?_sort=country&_order=asc`)
+        fetch(`http://localhost:3001/agents?_sort=country&_order=asc`)
             .then((response) => {
                 if (!response.ok) {
                     throw Error(response.statusText);
@@ -35,11 +35,11 @@ export function addMission(mission) {
             type: ADD_MISSION + START,
         });
 
-        postRequest('http://localhost:3000/agents', mission)
+        postRequest('http://localhost:3001/agents', mission)
             .then(() => dispatch({
                 type: ADD_MISSION + SUCCESS,
             }))
-            .then(() => {fetch(`http://localhost:3000/agents?_sort=country&_order=asc`)
+            .then(() => {fetch(`http://localhost:3001/agents?_sort=country&_order=asc`)
                 .then((response) => {
                     if (!response.ok) {
                         throw Error(response.statusText);
@@ -67,11 +67,11 @@ export function saveArchive() {
             type: SAVE_ARCHIVE + START,
         });
 
-        deleteRequest('http://localhost:3000/archives')
+        deleteRequest('http://localhost:3001/archives')
             .then(() => dispatch({
                 type: SAVE_ARCHIVE + SUCCESS,
             }))
-            .then(() => {fetch(`http://localhost:3000/agents?_sort=country&_order=asc`)
+            .then(() => {fetch(`http://localhost:3001/agents?_sort=country&_order=asc`)
                 .then((response) => {
                     if (!response.ok) {
                         throw Error(response.statusText);
